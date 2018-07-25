@@ -1,16 +1,10 @@
-/** @format */
-
-import React, {Component} from 'react';
-import {View} from 'react-native';
-import {AppRegistry, StyleSheet} from 'react-native';
-import GnarBox from './App';
-import { Provider, connect } from 'react-redux';
-import { createStore } from 'redux';
-import reducer from './reducer';
-import {name as appName} from './app.json';
-
-const store = createStore(reducer);
-
+import React, { Component } 			 from 'react';
+import { View } 									 from 'react-native';
+import { AppRegistry, StyleSheet } from 'react-native';
+import { Provider, connect } 			 from 'react-redux';
+import GnarBox 										 from './App';
+import { name as appName } 				 from './app.json';
+import store 											 from './store'
 
 class App extends Component {
   render() {
@@ -25,7 +19,6 @@ class App extends Component {
 }
 
 AppRegistry.registerComponent(appName, () => App);
-
 
 const styles = StyleSheet.create({
   appContainer: {
