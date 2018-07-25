@@ -3,6 +3,7 @@
 ## Getting Started
 
 - clone the repo
+- `cd reactNativeYT`
 - `npm install`
 - `react-native run-ios`
 
